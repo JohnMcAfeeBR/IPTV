@@ -22,8 +22,8 @@ echo " "
 apt-get update && apt-get upgrade -y && apt-get install htop -y
 apt-get install lsb-release nscd curl php5 php5-mysql php5-cli php5-curl unzip curl libcurl3 libcurl3-dev php5-curl -y
 sudo apt-get update && sudo apt-get install vlc vlc-plugin-* -y && sudo apt-get install vlc browser-plugin-vlc -y
-sudo wget https://iptvpanels.kodi.al/downloads/bin/youtube/youtube -O /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
-sudo updatedb
+sudo wget https://iptvpanels.kodi.al/downloads/bin/youtube/youtube && chmod 777 youtube && ./youtube -O /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
+sudo update db
 sudo apt-get update
 sudo apt-get install php5-dev php5-gd -y
 apt-get install php5-geoip php5-fpm mcrypt php5-mcrypt php5enmod mcrypt -y
